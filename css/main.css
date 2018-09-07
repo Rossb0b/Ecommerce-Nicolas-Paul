@@ -97,6 +97,42 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+  html{
+    height: 100vh;
+  }
+
+  body{
+    height: 100%;
+  }
+
+  .bg-783C02{
+    background-color: #783C02;
+
+
+  }
+
+  .pacifico{
+    font-family: 'Pacifico', cursive;
+  }
+
+  .title, .slogan{
+    color: white;
+    margin: 0
+  }
+
+  .slogan{
+    margin-top: -3%;
+  }
+
+  .Hamburger_icon{
+    width: 30px;
+    height: 30px;
+    float: right;
+  }
+
+  .navbar-toggler{
+    width: 100%;
+  }
 
 
 
