@@ -1,6 +1,16 @@
 <!doctype html>
 <html class="no-js" lang="">
+<?php
 
+
+
+$product_list = array(
+1 => array('name' => 'Lebron 11 XI', 'price' => '€69.99', 'picture' => '<img class="over-mouse basket-img" src="img/71+ocG8nKWL._UX395_.jpg"'),
+2 => array('name' => 'SLENTPPK', 'price' => '€79.99'),
+3 => array('name' => 'Nike Zoom LeBron', 'price' => '€82.99'),
+4 => array('name' => 'High Top-G0621_2', 'price' => '€67.30')
+);
+ ?>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -12,20 +22,33 @@
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <footer>
-    <div class="container-fluid bg-783C02 footer">
-      <div class="div-logo">
-          <img class="facebook" src="img/logo-facebook.png" alt="facebook">
-          <img class="twitter" src="img/twitter.png" alt="twitter">
+
+  <div class="page">
+    <?php
+      include 'header.html';
+    ?>
+    <div class="container">
+      <div class="row justify-content-around margin-top">
+        <div class="col-10 col-md-5 col-lg-2 m-3 produit">
+          <?php foreach ($variable as $key => $value): ?>
+
+          <?php endforeach; ?>
+        </div>
+
       </div>
     </div>
-  </footer>
+    <?php
+      include 'footer.html';
+    ?>
+  </div>
+
+
+
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>

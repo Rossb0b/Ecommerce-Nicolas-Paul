@@ -103,12 +103,25 @@ textarea {
 
   body{
     height: 100%;
+
+  }
+
+  .page{
+    display: flex;
+    flex-direction: column;
+  }
+
+  section{
+    flex-grow:1
   }
 
 
 /*HEADER*/
   .bg-783C02{
     background-color: #783C02;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
   }
 
   .pacifico{
@@ -138,19 +151,13 @@ textarea {
   .logo-medium{
     width: 100%;
   }
-  @media (max-width: 992px) {
-    .desktop{
-      display: none;
-    }
-  }
+
 
 /*FOOTER*/
 
 .footer{
   width: 100%;
   height: 80px;
-  bottom: 0;
-  position: absolute;
 }
 
 .facebook{
@@ -161,10 +168,53 @@ textarea {
 
 .twitter{
   width: 80px;
-  float: right;
+  float: left;
 }
 
+/*Index*/
 
+
+.produit{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.basket-img{
+  width: 100%;
+}
+
+.description-index{
+  color: #FF4200;
+  font-weight: bold;
+  text-align: center;
+}
+
+.margin-top{
+  margin-top: 100px;
+}
+
+.over-mouse:hover{
+  padding: 30px;
+  transition: 2s;
+}
+
+@media (max-width: 992px) {
+  .desktop{
+    display: none;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .footer{
+    position: absolute;
+    bottom: 0;
+  }
+  .margin-top{
+    margin-top: 100px;
+  }
+}
 
 
 
