@@ -103,12 +103,25 @@ textarea {
 
   body{
     height: 100%;
+
   }
 
+  .page{
+    display: flex;
+    flex-direction: column;
+  }
+
+  section{
+    flex-grow:1
+  }
+
+
+/*HEADER*/
   .bg-783C02{
     background-color: #783C02;
-
-
+    width: 100%;
+    z-index: 1;
+    position: fixed;
   }
 
   .pacifico{
@@ -116,12 +129,13 @@ textarea {
   }
 
   .title, .slogan{
-    color: white;
-    margin: 0
+    background-color: #783C02;
+    color:white;
+    margin: 0;
   }
 
   .slogan{
-    margin-top: -3%;
+    margin-top: -13px;
   }
 
   .Hamburger_icon{
@@ -134,12 +148,73 @@ textarea {
     width: 100%;
   }
 
+  .logo-medium{
+    width: 100%;
+  }
 
 
+/*FOOTER*/
+
+.footer{
+  width: 100%;
+  height: 80px;
+}
+
+.facebook{
+  margin-top: 20px;
+  width: 80px;
+  float: right;
+}
+
+.twitter{
+  width: 80px;
+  float: left;
+}
+
+/*Index*/
 
 
+.produit{
+  display: flex;
+  flex-direction: column;
 
+}
 
+.basket-img{
+  width: 100%;
+}
+
+.description-index{
+  color: #FF4200;
+  font-weight: bold;
+  text-align: center;
+}
+
+.margin-top{
+  margin-top: 100px;
+}
+
+.over-mouse:hover{
+  padding: 30px;
+  transition: 2s;
+}
+
+@media (max-width: 992px) {
+  .desktop{
+    display: none;
+  }
+
+}
+
+@media (min-width: 992px) {
+  .footer{
+    position: absolute;
+    bottom: 0;
+  }
+  .margin-top{
+    margin-top: 100px;
+  }
+}
 
 
 
@@ -309,7 +384,7 @@ textarea {
         page-break-inside: avoid;
     }
 
-    p,
+
     h2,
     h3 {
         orphans: 3;

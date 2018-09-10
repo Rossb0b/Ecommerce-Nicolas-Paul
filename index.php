@@ -1,6 +1,16 @@
 <!doctype html>
 <html class="no-js" lang="">
+<?php
 
+
+
+$product_list = array(
+1 => array('name' => 'Lebron 11 XI', 'price' => '€69.99', 'picture' => '<img class="over-mouse basket-img" src="img/71+ocG8nKWL._UX395_.jpg"'),
+2 => array('name' => 'SLENTPPK', 'price' => '€79.99'),
+3 => array('name' => 'Nike Zoom LeBron', 'price' => '€82.99'),
+4 => array('name' => 'High Top-G0621_2', 'price' => '€67.30')
+);
+ ?>
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -8,9 +18,6 @@
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
@@ -20,26 +27,27 @@
 </head>
 
 <body>
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-783C02">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-        <span><img class="Hamburger_icon"src="img/Hamburger_icon.svg.png" alt=""></span>
-        <div class="">
-          <h1 class="title text-center"><span class="pacifico">E</span>-shoes</h1>
-          <p class="slogan text-center">Prends ton pied</p>
+
+  <div class="page">
+    <?php
+      include 'header.html';
+    ?>
+    <div class="container">
+      <div class="row justify-content-around margin-top">
+        <div class="col-10 col-md-5 col-lg-2 m-3 produit">
+          <?php foreach ($variable as $key => $value): ?>
+
+          <?php endforeach; ?>
         </div>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav logo-medium">
-          <a class=" nav-item nav-link active font-weight-bold text-white" href="index.html">Acceuil <span class="sr-only">(current)</span></a>
-          <div class="col-10 desktop">
-            <h1 class="title text-center"><span class="pacifico">E</span>-shoes</h1>
-            <p class="slogan text-center">Prends ton pied</p>
-          </div>
-        </div>
+
       </div>
-    </nav>
-  </header>
+    </div>
+    <?php
+      include 'footer.html';
+    ?>
+  </div>
+
+
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
