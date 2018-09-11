@@ -97,118 +97,133 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
- html, body{
-    height:100vh;
-    width:100%;
-    margin:0;
+   html, body{
+     height:100vh;
+     margin:0;
+ }
+
+   .page{
+     display: flex;
+     flex-direction: column;
+     height:100%;
+   }
+
+   section{
+     flex:1;
+   }
+
+
+ /*HEADER*/
+   .bg-783C02{
+     background-color: #783C02;
+     width: 100%;
+     z-index: 1;
+   }
+
+   .fixed{
+     position: fixed;
+   }
+
+   .pacifico{
+     font-family: 'Pacifico', cursive;
+   }
+
+   .title, .slogan{
+     background-color: #783C02;
+     color:white;
+     margin: 0;
+   }
+
+   .slogan{
+     margin-top: -13px;
+   }
+
+   .Hamburger_icon{
+     width: 30px;
+     height: 30px;
+     float: right;
+   }
+
+   .navbar-toggler{
+     width: 100%;
+   }
+
+   .logo-medium{
+     width: 100%;
+   }
+
+
+ /*FOOTER*/
+
+ .footer{
+   width: 100%;
+   height: 80px;
+   background-color: #783C02;
+ }
+
+ .facebook, .twitter{
+   width: 80px;
+ }
+
+
+
+/* Prod Sheet */
+
+.prod {
+    display:flex;
+    margin-top:5vh;
 }
 
-/*HEADER*/
-  .bg-783C02{
-    background-color: #783C02;
-  }
-
-  header {
-    width: 100%;
-    z-index: 1;
-    position: fixed;
-    top:0;
-  }
-
-  .pacifico{
-    font-family: 'Pacifico', cursive;
-  }
-
-  .title, .slogan{
-    background-color: #783C02;
-    color:white;
-    margin: 0;
-  }
-  
-  .slogan{
-    margin-top: -13px;
-  }
-
-  .Hamburger_icon{
-    width: 30px;
-    height: 30px;
-    float: right;
-  }
-
-  .navbar-toggler{
-    width: 100%;
-  }
-
-  .logo-medium{
-    width: 100%;
-  }
-
-
-/*FOOTER*/
-
-footer {
-    width:100%;
-    height:12vh;
-    position:relative;
-    bottom:0;
-}
-
-.div-logo {
-    text-align:right;
-}
-
-.facebook, .twitter{
-  width: 80px;
-}
-
-
-/*Index*/
-
-
-.produit{
-  display: flex;
-  flex-direction: column;
-
-}
-
-.basket-img{
-  width: 100%;
-}
-
-.description-index{
-  color: #FF4200;
-  font-weight: bold;
-  text-align: center;
-}
-
-.margin-top{
-  margin-top: 100px;
-}
-
-.over-mouse:hover{
-  padding: 30px;
-  transition: 2s;
-}
-
-@media (max-width: 992px) {
-  .desktop{
-    display: none;
-  }
-
-}
-
-@media (min-width: 992px) {
-  .margin-top{
-    margin-top: 100px;
-  }
+.prodsheetimg {
+    width:30%;
 }
 
 
 
+ /*Index*/
+
+
+ .produit{
+   text-align: center;
+ }
+
+ .basket-img{
+   width: 100%;
+ }
+
+ .description-index{
+   color: #FF4200;
+   font-weight: bold;
+ }
+
+ .margin{
+   margin-top: 150px;
+ }
+
+ .div-logo{
+   text-align: center;
+ }
 
 
 
+ .over-mouse:hover{
+   padding: 30px;
+   transition: 2s;
+ }
 
+ @media (max-width: 992px) {
+   .desktop{
+     display: none;
+   }
+
+ }
+
+ @media (min-width: 992px) {
+   .div-logo{
+     text-align: right;
+   }
+
+ }
 
 
 
@@ -377,7 +392,7 @@ footer {
         page-break-inside: avoid;
     }
 
-    p,
+
     h2,
     h3 {
         orphans: 3;
