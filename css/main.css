@@ -166,8 +166,18 @@ textarea {
  }
 
 
+/* Product Sheet */
 
+.prod {
+  display:flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin-top: 10vh;
+}
 
+.Imgsheet {
+  width:100%;
+}
 
 
 
@@ -180,8 +190,13 @@ textarea {
    text-align: center;
  }
 
- img{
+ .size-img{
     width: 100%;
+ }
+
+ .size-img:hover{
+    padding: 30px;
+    transition: 1s;
  }
 
  .basket-img{
@@ -191,6 +206,16 @@ textarea {
  .description-index{
    color: #FF4200;
    font-weight: bold;
+ }
+
+ a{
+   color: #FF4200;
+   text-decoration: none;
+ }
+
+ a:hover{
+   color: #FF4200;
+   text-decoration: none;
  }
 
  .margin{
