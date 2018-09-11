@@ -165,6 +165,15 @@ textarea {
    width: 80px;
  }
 
+ .facebook:hover{
+   padding: 10px;
+   transition: 1s;
+ }
+
+ .twitter:hover{
+   padding: 10px;
+   transition: 1s;
+ }
 
 /* Product Sheet */
 
@@ -237,6 +246,15 @@ textarea {
    .desktop{
      display: none;
    }
+
+   footer{
+     display: none;
+   }
+
+   .prod {
+     margin-top: 15vh;
+   }
+
 
  }
 
