@@ -44,13 +44,13 @@ $prodlist = array
   );
  ?>
 
-<?php include 'header.html';
-?>
+<?php include 'header.html';?>
+
 
 <section>
     <div class="container">
       <div class="row">
-        <div class="col-5 mx-auto prod produit">
+        <div class="col-12  col-md-4 mx-auto prod produit">
           <?php
             echo $prodlist[$_GET['index']]['picture'];
             echo $prodlist[$_GET['index']]['name'];
@@ -64,7 +64,6 @@ $prodlist = array
      </div>
     </div>
 </section>
-?>
 
-<?php include 'footer.html';
-?>
+
+<?php include 'footer.html';?>
