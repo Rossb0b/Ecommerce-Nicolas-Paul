@@ -1,9 +1,9 @@
-<<<<<<< HEAD
+
 <snippet>
   <content><![CDATA[
-# ${1:Project Name}
 
-TODO: "Yes We Web" project developed in group, it's a shopwindow developped in PHP with associative array.
+
+"Yes We Web" project developed in group, it's a shopwindow developped in PHP with associative array.
 
 ## Contributing
 
@@ -23,7 +23,7 @@ Paul Decoux, Nicolas Hallaert.
 
 ## License
 
-TODO: Write license
-]]></content>
+
+</content>
   <tabTrigger>readme</tabTrigger>
 </snippet>
