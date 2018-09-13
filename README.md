@@ -15,7 +15,7 @@
 
 ## History
 
-TODO: Write history
+
 
 ## Credits
 
