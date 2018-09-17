@@ -212,7 +212,6 @@ textarea {
     transition: 1s;
  }
 
-
  .basket-img{
    width: 100%;
  }
@@ -261,16 +260,16 @@ textarea {
    }
 
 
+ .div-logo{
+   text-align: center;
+ }
+
  }
 
  @media (min-width: 992px) {
    .div-logo{
      text-align: right;
    }
-
- }
-
-
 
 
 

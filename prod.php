@@ -2,6 +2,7 @@
 
 session_start();
 
+
 try
 {
     $bdd = new PDO('mysql:host=localhost;dbname=e-shoes;charset=utf8', 'root', '58375837Zz');
@@ -37,6 +38,7 @@ $rep = $req->fetchAll();
      </div>
     </div>
 </section>
-
-
-<?php include 'footer.html';?>
+      
+    <?php
+      include 'footer.html';
+    ?>
