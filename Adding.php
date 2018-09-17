@@ -15,8 +15,11 @@ session_start();
 
 if (isset($_POST['identifiant']) AND isset($_POST['password'])) {
 		if ($_POST['identifiant'] == $_SESSION['identifiant'] AND $_POST['password'] == $_SESSION['password']) 
-		{
-			echo $_POST['identifiant'];
+		{ ?>
+		<form method="post" action="Adding.php">
+			<input type="text" name="name"/>
+		
+		<?php
 		}
 		else 
 		{
