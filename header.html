@@ -7,13 +7,14 @@ $title =  array
 
 ?>
 
-<!doctype html>
-<html class="no-js" lang="">
+
 
 <head>
+  <!doctype html>
+  <html class="no-js" lang="FR">
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+  <title>E-Shoes</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
@@ -25,22 +26,35 @@ $title =  array
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+
   <div class="page">
     <header>
       <nav class="navbar navbar-expand-lg navbar-light bg-783C02 fixed">
+        
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          
           <span><img class="Hamburger_icon" src="img/Hamburger_icon.svg.png" alt=""></span>
+          
           <div class="">
             <?php echo $title['name']; ?>
           </div>
+
         </button>
+
+        
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          
           <div class="navbar-nav logo-medium">
-            <a class=" nav-item nav-link active font-weight-bold text-white" href="index.php">Acceuil <span class="sr-only">(current)</span></a>
-            <div class="col-10 desktop">
+            
+            <a class=" nav-item nav-link active font-weight-bold text-white col-1" href="index.php">Acceuil <span class="sr-only">(current)</span></a>
+            <input class="nav-item nav-link active col-6 d-lg-none connexion" type="button" value="connexion" onclick="self.location.href='Adding.php'"> 
+            
+            <div class="col-9 desktop">
               <?php echo $title['name']; ?>
             </div>
+
+            <input class="nav-item nav-link active col-2 d-none d-lg-block connexion" type="button" value="connexion" onclick="self.location.href='Adding.php'">
           </div>
         </div>
-      </nav>
-    </header>
+       </nav>
+      </header>        
