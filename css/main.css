@@ -97,7 +97,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-<<<<<<< HEAD
    html, body{
      height:100vh;
      margin:0;
@@ -208,113 +207,7 @@ textarea {
     padding: 30px;
     transition: 1s;
  }
-=======
- html, body{
-    height:100vh;
-    width:100%;
-    margin:0;
-}
 
-/*HEADER*/
-  .bg-783C02{
-    background-color: #783C02;
-  }
-
-  header {
-    width: 100%;
-    z-index: 1;
-    position: fixed;
-    top:0;
-  }
-
-  .pacifico{
-    font-family: 'Pacifico', cursive;
-  }
-
-  .title, .slogan{
-    background-color: #783C02;
-    color:white;
-    margin: 0;
-  }
-  
-  .slogan{
-    margin-top: -13px;
-  }
-
-  .Hamburger_icon{
-    width: 30px;
-    height: 30px;
-    float: right;
-  }
-
-  .navbar-toggler{
-    width: 100%;
-  }
-
-  .logo-medium{
-    width: 100%;
-  }
-
-
-/*FOOTER*/
-
-footer {
-    width:100%;
-    height:12vh;
-    position:relative;
-    bottom:0;
-}
-
-.div-logo {
-    text-align:right;
-}
-
-.facebook, .twitter{
-  width: 80px;
-}
-
-
-/*Index*/
-
-
-.produit{
-  display: flex;
-  flex-direction: column;
-
-}
-
-.basket-img{
-  width: 100%;
-}
-
-.description-index{
-  color: #FF4200;
-  font-weight: bold;
-  text-align: center;
-}
-
-.margin-top{
-  margin-top: 100px;
-}
-
-.over-mouse:hover{
-  padding: 30px;
-  transition: 2s;
-}
-
-@media (max-width: 992px) {
-  .desktop{
-    display: none;
-  }
-
-}
-
-@media (min-width: 992px) {
-  .margin-top{
-    margin-top: 100px;
-  }
-}
->>>>>>> 6d0058e4e09ded60323e474d837070b75ba5d06f
 
  .basket-img{
    width: 100%;
