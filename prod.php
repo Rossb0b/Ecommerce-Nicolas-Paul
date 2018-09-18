@@ -36,7 +36,10 @@ $rep = $req->fetchAll();
             echo $rep[$_GET['index']]['description'];
           ?>
           <!-- button add  -->
-          <button type="button" class="mx-auto mt-5 col-6 btn btn-success">Ajouter au panier</button>
+          <form class="" method="post" action="panier.php">
+            <button id="button" name="go" type="submit"  value="send" class="mx-auto mt-5 col-6 btn btn-success">Ajouter au panier</button>
+          </form>
+
        </div>
      </div>
     </div>

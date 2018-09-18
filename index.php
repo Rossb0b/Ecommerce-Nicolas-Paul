@@ -32,6 +32,7 @@ $rep = $req->fetchAll();
               echo $value['price'];
               echo "</a></div>";
             };
+            
 
             $req->closeCursor();
           //select all from users table//
