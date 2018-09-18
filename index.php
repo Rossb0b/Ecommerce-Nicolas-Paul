@@ -1,78 +1,52 @@
 <?php
-  $prodlist = array
-    (
-      'prod1' => array
-      (
-        'name' => 'Lebron 11 XI',
-        'price' => '€69.99',
-        'picture' => '<img name ="Lebron 11 XI" method="post" action="prod.php" class="size-img" src="img/ankle-men-s-air-cushion-authentic.jpg_640x640.jpg" alt=""',
-        'dispo' => 'Il ne reste pu que deux exemplaires !',
-        'size' => '43EU','41EU',
-        'color' => 'Black',
-        'desc' => 'Synthétique',
-      ),
-        'prod2' => array
-      (
-        'name' => 'LeBron 15',
-        'price' => '€150',
-        'picture' => '<img name ="LeBron 15" class="size-img" src="img/nike-zoom-kobe-10.jpg" alt=""',
-        'dispo' => 'Dernier exemplaire disponible',
-        'size' => '40EU',
-        'color' => 'Multicolor/black',
-        'desc' => 'Synthétique',
-      ),
-        'prod3' => array
-      (
-        'name' => 'High Top-G0621_2',
-        'price' => '€67.30',
-        'picture' => '<img name ="High Top-G0621_2" class="size-img" src="img/product-image-563631783.jpg" alt=""',
-        'dispo' => 'None',
-        'size' => 'None',
-        'color' => 'Red',
-        'desc' => 'Breathable',
-      ),
-        'prod4' => array
-      (
-        'name' => 'Air Jordan 1',
-        'price' => '€109.99',
-        'picture' => '<img name ="Air Jordan 1" class="size-img" src="img/Sneakers-High-Top.jpg" alt=""',
-        'dispo' => 'Il reste deux exemplaires !',
-        'size' => '44.5', '45',
-        'color' => 'Red',
-        'desc' => 'Leather',
-      )
+session_start();
+//connenction bdd//
+try
+{
+    $bdd = new PDO('mysql:host=localhost;dbname=e-shoes;charset=utf8', 'root', 'yeswewebPaul');
+}
 
-    );
+catch(Exception $e)
+{
+        die('Erreur : '.$e->getMessage());
+}
+//Select all from table product//
+$req = $bdd->query('SELECT id, name, price, picture FROM products ORDER BY id LIMIT 0,4');
+$rep = $req->fetchAll();
+//include header page//
+    include 'header.html';
+?>
 
-
-   ?>
-
-    <?php
-      include 'header.html';
-    ?>
     <section>
       <div class="container">
         <div class="row margin">
 
 
-
           <?php
-            foreach ($prodlist as $key => $value) {
-              echo "<div class='col-md-6 col-lg-3 d-flex flex-column text-center description-index'>";
+          //display information for each article//
+            foreach ($rep as $key => $value) {
+              echo "<div class='mx-auto col-md-6 col-lg-2 d-flex flex-column text-center description-index border-FF4200 mx-2'>";
               echo "<a href='prod.php?index=$key'>";
-              echo $value['picture'] . "<br />";
+              echo "<img class='Imgsheet size-img' src='img/" . $value['picture'] . "' alt='photo sneakers'><br />";
               echo $value['name'] . '<br />';
               echo $value['price'];
               echo "</a></div>";
             };
 
+            $req->closeCursor();
+          //select all from users table//
+            $req = $bdd->query('SELECT * FROM users');
 
+            $rep = $req->fetch();
 
+            $_SESSION['identifiant'] = $rep['name'];
+            $_SESSION['password'] = $rep['password'];
           ?>
         </div>
       </div>
     </section>
     <?php
+    //including footer page//
       include 'footer.html';
     ?>
   </div>
