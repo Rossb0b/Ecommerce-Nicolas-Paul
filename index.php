@@ -38,12 +38,6 @@ $rep = $req->fetchAll();
 
             $req->closeCursor();
 
-            $req = $bdd->query('SELECT * FROM users');
-
-            $rep = $req->fetch();
-
-            $_SESSION['identifiant'] = $rep['name'];
-            $_SESSION['password'] = $rep['password'];
           ?>
         </div>
       </div>

@@ -152,6 +152,10 @@ textarea {
      width: 100%;
    }
 
+   .connexion{
+    width:100px;
+   }
+
 
  /*FOOTER*/
 
@@ -165,18 +169,30 @@ textarea {
    width: 80px;
  }
 
+ .facebook:hover{
+   padding: 10px;
+   transition: 1s;
+ }
 
+ .twitter:hover{
+   padding: 10px;
+   transition: 1s;
+ }
 
-/* Prod Sheet */
+/* Product Sheet */
 
 .prod {
-    display:flex;
-    margin-top:5vh;
+  display:flex;
+  flex-direction: column;
+  font-weight: bold;
+  margin-top: 10vh;
 }
 
-.prodsheetimg {
-    width:30%;
+.Imgsheet {
+  width:100%;
 }
+
+
 
 
 
@@ -187,6 +203,15 @@ textarea {
    text-align: center;
  }
 
+ .size-img{
+    width: 100%;
+ }
+
+ .size-img:hover{
+    padding: 30px;
+    transition: 1s;
+ }
+
  .basket-img{
    width: 100%;
  }
@@ -194,6 +219,16 @@ textarea {
  .description-index{
    color: #FF4200;
    font-weight: bold;
+ }
+
+ a{
+   color: #FF4200;
+   text-decoration: none;
+ }
+
+ a:hover{
+   color: #FF4200;
+   text-decoration: none;
  }
 
  .margin{
@@ -216,16 +251,25 @@ textarea {
      display: none;
    }
 
+   footer{
+     display: none;
+   }
+
+   .prod {
+     margin-top: 15vh;
+   }
+
+
+ .div-logo{
+   text-align: center;
+ }
+
  }
 
  @media (min-width: 992px) {
    .div-logo{
      text-align: right;
    }
-
- }
-
-
 
 
 
