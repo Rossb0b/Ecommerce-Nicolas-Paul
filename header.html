@@ -1,4 +1,5 @@
 <?php
+session_start();
 $title =  array
 (
   'nameHTML' => '<a href="index.php"><h1 class="title text-center"><span class="pacifico">E</span>-shoes</h1>
@@ -51,6 +52,8 @@ $title =  array
             <div class="col-9 desktop mx-5">
               <?php echo $title['nameHTML']; ?>
             </div>
+            <p class="text-white"><?php echo $_SESSION['panier'];?></p>
+            <img class="panier m-2" src="img/panier-CSLH.png" alt="panier">
             <a class=" nav-item nav-link active font-weight-bold text-white col-1" href="index.php">Acceuil<span class="sr-only">(current)</span></a>
             <input class="nav-item nav-link active col-6 d-lg-none connexion" type="button" value="connexion" onclick="self.location.href='Adding.php'">
           </div>
